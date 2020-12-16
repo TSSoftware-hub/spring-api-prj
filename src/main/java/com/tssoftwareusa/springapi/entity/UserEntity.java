@@ -12,7 +12,7 @@ public class UserEntity {
     private String password;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
-    private List<ToDoEntity> toDoEntities;
+    private List<ToDoEntity> todos;
 
     public UserEntity() {
     }
@@ -39,5 +39,13 @@ public class UserEntity {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public List<ToDoEntity> getTodos() {
+        return todos;
+    }
+
+    public void setTodos(List<ToDoEntity> todos) {
+        this.todos = todos;
     }
 }
