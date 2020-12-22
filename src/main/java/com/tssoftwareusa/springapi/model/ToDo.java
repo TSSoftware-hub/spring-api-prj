@@ -3,6 +3,7 @@ package com.tssoftwareusa.springapi.model;
 import com.tssoftwareusa.springapi.entity.ToDoEntity;
 
 public class ToDo {
+
     private Long id;
     private String title;
     private Boolean completed;
